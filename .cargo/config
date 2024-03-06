@@ -1,2 +1,6 @@
 [target.x86_64-unknown-linux-gnu]
 rustflags = ["-C", "link-arg=-Wl,--allow-shlib-undefined", "-C", "link-arg=-fno-lto"]
+
+[env]
+LIBTORCH = "/Users/jado/projects/ai/pytorch-install"
+DYLD_LIBRARY_PATH = "/Users/jado/projects/ai/pytorch-install/lib:$DYLD_LIBRARY_PATH"
